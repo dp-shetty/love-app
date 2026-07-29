@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(
+      135deg,
+      #ff9a9e,
+      #fad0c4,
+      #fad0c4,
+      #ffd1ff
+  );
+
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: red;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+.card {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  padding: 40px;
+
+  backdrop-filter: blur(15px);
+
+  background: rgba(255,255,255,.15);
+
+  border-radius: 25px;
+
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+
+  border-radius: 30px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.gallery {
+  margin: 60px auto;
+
+  width: 90%;
+
+  display: grid;
+
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
+
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  bottom: -30px;
+  animation: float 7s linear infinite;
+  font-size: 24px;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
